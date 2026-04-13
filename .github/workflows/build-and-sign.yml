@@ -18,9 +18,9 @@ jobs:
       # Sigstore signing
       - uses: sigstore/gh-action-sigstore-python@v3.3.0
         with:
-          inputs: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard
+          inputs: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard/AudioFlashcard
 
       - uses: actions/upload-artifact@v4
         with:
           name: signed-executable
-          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard # Upload binary and signature files
+          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard/AudioFlashcard # Upload binary and signature files
