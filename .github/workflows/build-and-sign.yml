@@ -12,8 +12,8 @@ jobs:
       - run: pip install pyinstaller -r requirements.txt
       - run: pyinstaller audioFlashcard.spec
 
-      #- name: List files
-      #  run: ls -R /home/runner/work/AudioFlashCards/AudioFlashCards/dist/
+      - name: List files
+        run: ls -R /home/runner/work/AudioFlashCards/AudioFlashCards/dist/
 
       # Sigstore signing
       - uses: sigstore/gh-action-sigstore-python@v3.3.0
@@ -23,4 +23,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: signed-executable
-          path: dist/audioFlashcard # Upload binary and signature files
+          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/audioFlashcard # Upload binary and signature files
