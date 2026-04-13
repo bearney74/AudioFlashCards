@@ -10,7 +10,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install pyinstaller -r requirements.txt
-      - run: pyinstaller audioFlashcard.spec
+      - run: pyinstaller --onefile audioFlashcard.spec
 
       - name: List files
         run: ls -R /home/runner/work/AudioFlashCards/AudioFlashCards/dist/
