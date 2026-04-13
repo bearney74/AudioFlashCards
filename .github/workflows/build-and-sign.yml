@@ -12,6 +12,9 @@ jobs:
       - run: pip install pyinstaller -r requirements.txt
       - run: pyinstaller audioFlashcard.spec
 
+      - name: List files
+        run: ls -R dist/audioFlashcard/
+
       # Sigstore signing
       - uses: sigstore/gh-action-sigstore-python@v3.3.0
         with:
