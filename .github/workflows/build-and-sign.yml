@@ -10,7 +10,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install pyinstaller -r requirements.txt
-      - run: pyinstaller --onefile audioFlashcard.spec
+      - run: pyinstaller audioFlashcard.spec
 
       - name: List files
         run: ls -R /home/runner/work/AudioFlashCards/AudioFlashCards/dist/
@@ -23,4 +23,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: signed-executable
-          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/audioFlashcard # Upload binary and signature files
+          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/ # Upload binary and signature files
