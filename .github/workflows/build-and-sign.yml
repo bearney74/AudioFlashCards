@@ -26,4 +26,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: signed-executable
-          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard/AudioFlashcard # Upload binary and signature files
+          path: /home/runner/work/AudioFlashCards/AudioFlashCards/dist/AudioFlashcard/ # Upload binary and signature files
