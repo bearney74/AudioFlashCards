@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wealthman
+Exec=wealthman
+Comment=Retirement planning software
+Icon=wealthman
+Categories=Finance;
+Terminal=false

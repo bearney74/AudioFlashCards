@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>scipy</id>
+    <metadata_license>MIT</metadata_license>
+    <project_license></project_license>
+    <name>WealthMan</name>
+    <summary>A retirement planning application</summary>
+    <description>
+        <p>  A wealth management application.  Can be used to project future buying power of your assets.
+        </p>
+    </description>
+    <launchable type="desktop-id">wealthman.desktop</launchable>
+    <url type="homepage">https://github.com/bearney74/WealthMan</url>
+    <provides>
+        <binary>wealthman</binary>
+    </provides>
+</component>

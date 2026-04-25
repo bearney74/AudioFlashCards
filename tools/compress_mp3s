@@ -1,0 +1,3 @@
+mkdir ../out1
+cd ../out
+find . -type f -name '*.mp3' -exec ffmpeg -i {} -q:a 8 ../out1/{} \;
