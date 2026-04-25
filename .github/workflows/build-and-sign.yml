@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   build-and-sign:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest windows-latest macos-latest
     permissions:
       id-token: write
       contents: write
